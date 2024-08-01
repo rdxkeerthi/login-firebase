@@ -66,6 +66,8 @@ Host the app on a server firebase [![My Skills](https://skillicons.dev/icons?i=f
        
   `  firebase init hosting`
 
+   `firebase login`
+
   `firebase deploy --only hosting`
 
   `firebase deploy`
