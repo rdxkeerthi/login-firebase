@@ -63,7 +63,7 @@ createacctbtn.addEventListener("click", function() {
       // Signed in 
       const user = userCredential.user;
       // ...
-      location.replace("./first.html")
+      location.replace("./output/index.html")
       window.alert("Success! Account created.");
     })
     .catch((error) => {
@@ -93,6 +93,7 @@ submitButton.addEventListener("click", function() {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
+      location.replace("./index.html")
       console.log("Error occurred. Try again.");
       window.alert("Error occurred. Try again.");
     });

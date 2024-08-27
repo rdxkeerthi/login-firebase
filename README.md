@@ -50,6 +50,23 @@ const firebaseConfig = {
 }; 
 
 
+### Database Rules 
+
+```
+{
+  "rules": {
+    "user":{
+      "$uid":{
+        ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+
+```
+
+
 #### Usage
 
 Sign in a user with an email address and password
@@ -57,16 +74,21 @@ Sign in a user with an email address and password
 ### Host 
 Host the app on a server firebase [![My Skills](https://skillicons.dev/icons?i=firebase&theme=)](https://skillicons.dev)
 
+`sudo apt-get update`
+
+`sudo apt-get upgrade`
+
 `sudo npm install -g firebase-tools`
+
+`firebase login`
+
 
 `firebase use --add [your id]`
 
 ### Deploy
 
        
-  `  firebase init hosting`
-
-   `firebase login`
+  `firebase init hosting`
 
   `firebase deploy --only hosting`
 

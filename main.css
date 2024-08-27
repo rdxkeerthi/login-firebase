@@ -10,7 +10,7 @@
 body {
   
 
-   background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHZ0ZW41OTlqY2ZhZGhsemtyMnF5dXRzeDZyZHYyZGg3d2J5Y3cxNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rGRcW3cchBceuvMdKS/giphy.gif');
+   background-color: transparent;
   
   background-size: cover;
   backdrop-filter: blur(5%);
